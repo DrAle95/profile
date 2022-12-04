@@ -1,6 +1,8 @@
 body {
   font-family: Raleway;
-  background-color: #dbe8fa8d;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
   color: #644536;
   text-align: center;
   padding: 25px;
@@ -13,19 +15,12 @@ h1, h2, h3, h4 {
   border-radius: 50%;
   width: 100px;
 }
-.socials {
-  text-align: center;
-}
-.p-link {
-  color: rgba(95, 47, 73, 0.692)83;
-  font-weight: bold;
+
+.p-socials {
   text-decoration: none;
-  background-color: #b33d1ab6;
-  border: none;
   color: rgb(226, 168, 168);
   padding: 10px 15px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
@@ -33,6 +28,7 @@ h1, h2, h3, h4 {
   border-radius: 20px;
   margin: 10px;
 }
+
 a {
   text-decoration: none;
   color: #be8383;
@@ -44,16 +40,24 @@ a:hover {
   color: #B22222;
 }
 .card {
-  background-color: #FFFAF0;
-  padding: 1px;
-  width: 500px;
-  margin: 25px auto;
+  background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+  padding-bottom: 10px;
+  width: 550px;
+  margin: 5px auto;
   border-radius: 10px;
   border: 1px solid #EAEAEA;
 }
 
+.card-flex {
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card > p-socials {
   text-align: center;
+
 }
 
 .p-hobbies
@@ -76,6 +80,77 @@ body.default {cursor: default;}
   width: 700px;
   margin: 40px auto;
 }
+
+/*
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 150px ;
+  justify-content: center;
+  margin: 5px;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+}
+*/
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+.project-links {
+  text-decoration: none;
+  color: #bb6a0d;
+}
+
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin: 5px;
+
+
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+  text-align: left;
+}
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
